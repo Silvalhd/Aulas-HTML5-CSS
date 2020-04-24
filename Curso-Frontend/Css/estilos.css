@@ -1,0 +1,12 @@
+body {
+    color: #333333;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+}
+
+
+.sacola {
+    color: rebeccapurple;
+    background-image: url(../img/sacola.png);
+    
+}
+
