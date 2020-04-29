@@ -26,7 +26,8 @@ header {
     position: absolute;
     bottom: 0;
     right: 0;
-    margin-bottom: 20px;
+    margin-bottom: 20;
+    padding: 15px;
 }
 
 .menu-opções ul {
@@ -35,6 +36,14 @@ header {
 
 .menu-opções a {
     color: #003366;
+}
+
+.menu-opções a:hover {
+    color: #007dc6;
+}
+
+.menu-opções a:active {
+    color: #867dc6;
 }
 
 .menu-opções ul li {
@@ -75,6 +84,22 @@ header {
 .menu-departamentos a {
     color: #333333;
     text-decoration: none;
+}
+
+.menu-departamentos li ul {
+    display: none;
+}
+
+.menu-departamentos li:hover ul {
+    display:block;
+}
+
+.menu-departamentos ul ul li {
+    background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a::before {
+    content: '- ';
 }
 
 .busca input[type=search] {
