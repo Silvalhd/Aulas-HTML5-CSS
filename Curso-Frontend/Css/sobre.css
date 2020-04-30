@@ -68,6 +68,8 @@ h1 + p {
     text-indent: 9px;
 }
 
-p::first-line {
+:not(p) + p::first-line {
     font-variant: small-caps;
 }
+
+
