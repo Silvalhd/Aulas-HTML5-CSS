@@ -1,0 +1,21 @@
+.main-header{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    font-size: 15px;
+    min-width: 320px;
+}
+
+.main-header  .logo {
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.main-header  .action {
+    display: inline-block;
+    margin: 0 10px 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
