@@ -12,10 +12,33 @@
     margin-bottom: 10px;
 }
 
+.shopping-bag {
+    display: none;
+}
+
 .main-header  .action {
     display: inline-block;
     margin: 0 10px 8px;
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 8px;
+}
+
+@media (min-width: 840px) {
+    .main-header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    .main-header  .menu {
+        align-self: flex-end;
+    }
+
+    .main-header  .shopping-bag {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+    }
 }

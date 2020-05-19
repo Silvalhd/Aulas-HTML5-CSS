@@ -3,13 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <title>Produtos</title>
+        <link rel="stylesheet" href="css/tools/container.css">
         <link rel="stylesheet" href="css/generic/reset.css">
         <link rel="stylesheet" href="css/components/shopping-bag.css">
+        <link rel="stylesheet" href="css/components/title-mirror.css">
         <link rel="stylesheet" href="css/containers/main-header.css">
+        <link rel="stylesheet" href="css/containers/product-mirror.css">
     </head>
 
     <body>
-        <header class="main-header">
+        <header class="main-header container">
             <h1>
                 <img class="logo" src="img/logo.png" alt="Logo da Mirror Fashion">
             </h1>
@@ -27,26 +30,26 @@
             </nav>
         </header>
 
-        <section class="produto">
-            <h2>Camiseta Ecko Caveira Bad to the bone</h2>
-            <p>por apenas R$ 48,95</p>
+        <section class="product-mirror">
+            <h2 class="title-mirror">Camiseta Ecko Caveira Bad to the bone</h2>
+            <p class="price">por apenas R$ 48,95</p>
 
             <form action="checkout.html" method="POST">
                 <fieldset class="cores">
-                    <legend>Escolha a cor:</legend>
+                    <legend class="color">Escolha a cor:</legend>
                     
-                    <input type="radio" name="cor" value="verde" id="verde" checked>
                     <label for="verde">
+                        <input type="radio" name="cor" value="verde" id="verde" checked>                    
                         <img src="img/produtos/foto1-verde.png" alt="Produto na cor verde">
                     </label>
 
-                    <input type="radio" name="cor" value="rosa" id="rosa" checked>
                     <label for="rosa">
+                        <input type="radio" name="cor" value="rosa" id="rosa" checked>                    
                         <img src="img/produtos/foto1-rosa.png" alt="Produto na cor rosa">
                     </label>
 
-                    <input type="radio" name="cor" value="azul" id="azul" checked>
                     <label for="azul">
+                        <input type="radio" name="cor" value="azul" id="azul" checked>                    
                         <img src="img/produtos/foto1-azul.png" alt="Produto na cor azul">
                     </label> 
                 </fieldset>

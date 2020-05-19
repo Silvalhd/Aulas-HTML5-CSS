@@ -1,0 +1,16 @@
+.product-mirror {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 20px 10px;
+}
+
+.product-mirror > .price {
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.product-mirror .color {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
