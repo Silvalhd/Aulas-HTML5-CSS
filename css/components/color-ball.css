@@ -1,0 +1,64 @@
+.color-ball {
+    position: relative;
+    padding-top: 75px;
+    
+}
+
+.color-ball > .ball::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+    top: 5px;
+    
+}
+
+.color-ball > .ball[for="verde"]::before {
+    background-color: #33cc66;
+}
+
+.color-ball > .ball[for="rosa"]::before {
+    background-color: #ff6666;
+    left: 70px;
+}
+
+.color-ball > .ball[for="azul"]::before {
+    background-color: #6666ff;
+    left: 140px;
+}
+
+
+.color-ball > .input {
+    display: none;
+}
+
+.color-ball  .input:checked + .ball::before {
+    border: 4px solid rgba(0, 0, 0, 0.5);
+}
+
+.color-ball  .photo {
+    box-sizing: border-box;
+    display: none;
+    width: 100%;
+}
+
+.color-ball > .ball[for="verde"] > .photo {
+    border: 2px solid #33cc66;
+}
+
+.color-ball > .ball[for="rosa"] > .photo {
+    border: 2px solid #ff6666;
+}
+
+.color-ball > .ball[for="azul"] > .photo {
+    border: 2px solid #6666ff;
+}
+
+
+.color-ball > .input:checked + .ball > .photo {
+    display: block;
+}
