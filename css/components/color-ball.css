@@ -44,6 +44,7 @@
     box-sizing: border-box;
     display: none;
     width: 100%;
+   
 }
 
 .color-ball > .ball[for="verde"] > .photo {
@@ -62,3 +63,36 @@
 .color-ball > .input:checked + .ball > .photo {
     display: block;
 }
+
+
+@media (min-width: 450px) {
+    .color-ball .photo {
+        width: 428px;
+    }
+}
+
+@media (min-width: 840px){
+    .color-ball {
+        padding-top: 0;
+    }
+    .color-ball > .color {
+        position: absolute;
+        left: 448px;
+        top: 130px;
+
+    }
+
+    .color-ball > .ball::before {
+        position: static;
+        display: inline-block;
+        margin-top: 150px;
+    }
+
+    .color-ball .photo {
+        float: left;
+        margin-right: 20px;
+    }
+}
+
+
+   

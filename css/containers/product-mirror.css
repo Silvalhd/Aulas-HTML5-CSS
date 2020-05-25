@@ -14,3 +14,50 @@
     font-size: 14px;
     font-weight: bold;
 }
+
+@media (min-width: 450px) {
+    .product-mirror {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-mirror > .title-mirror {
+        text-align: center;
+    }
+}
+
+@media (min-width: 840px) {
+    .product-mirror {
+        position: relative;
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .product-mirror > .title-mirror {
+        text-align: left;
+        position: absolute;
+        left: 448px;
+    }
+
+    .product-mirror > .price {
+        position: absolute;
+        left: 448px;
+        top: 80px;
+    }
+
+    .product-mirror .button-mirror {
+        position: absolute;
+        max-width: 300px;
+        left: 448px;
+        bottom: 20px;
+    }
+}
+
+@media (min-width: 1262px) {
+    .product-mirror {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
