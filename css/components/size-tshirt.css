@@ -1,0 +1,51 @@
+.size-tshirt > legend {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.size-tshirt > output {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+    text-align: center;
+    border: 3px solid #666;
+    border-radius: 50%;
+    color: #555;
+}
+
+
+
+@media (min-width: 840px) {
+    .size-tshirt {
+       padding-top: 0;
+   }
+
+   .size-tshirt > legend {
+    position: absolute;
+    left: 448px;
+    top: 260px;
+    padding: 10px;
+   }
+
+   .size-tshirt output {
+       position: absolute;
+       left: 640px;
+       top: 270px;
+       margin-bottom: 10px;
+       
+   }
+
+   .size-tshirt input {
+    position: absolute;
+    left: 448px;
+    top: 280px;
+    padding: 10px;
+   }
+
+
+
+}

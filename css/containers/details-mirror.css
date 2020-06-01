@@ -1,0 +1,53 @@
+.details-mirror {
+    padding: 2em 0;
+}
+
+.details-mirror h2 {
+    font-size: 1.5em;
+    line-height: 2;
+}
+
+.details-mirror p {
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.details-mirror table {
+    border-spacing: 0.2em;
+    border-collapse: separate;
+}
+
+.details-mirror thead {
+    background-color: #999;
+}
+
+.details-mirror thead th {
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+}
+
+.details-mirror td {
+    padding: 0.3em;
+}
+
+.details-mirror tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.details-mirror td:first-child {
+    font-size: italic;
+}
+
+@media (min-width: 840px) {
+   
+    .details-mirror {
+        position: relative;
+        display: block;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 1.2em;
+    
+    }
+}

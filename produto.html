@@ -9,12 +9,15 @@
         <link rel="stylesheet" href="css/components/title-mirror.css">
         <link rel="stylesheet" href="css/components/color-ball.css">
         <link rel="stylesheet" href="css/components/button-mirror.css">
+        <link rel="stylesheet" href="css/components/size-tshirt.css">
         <link rel="stylesheet" href="css/containers/main-header.css">
         <link rel="stylesheet" href="css/containers/product-mirror.css">
         <link rel="stylesheet" href="css/containers/footer-mirror.css">
+        <link rel="stylesheet" href="css/containers/details-mirror.css">
     </head>
 
     <body>
+       
         <header class="main-header container">
             <h1>
                 <img class="logo" src="img/logo.png" alt="Logo da Mirror Fashion">
@@ -56,10 +59,53 @@
                         <img class="photo" src="img/produtos/foto2-azul.png" alt="Produto na cor azul">
                     </label> 
                 </fieldset>
+
+                <fieldset class="size-tshirt">
+                    <legend>Escolha o tamanho:</legend>
+               
+                    <input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+                    <output for="tamanho" name="valortamanho"></output>
+                </fieldset>
                 
                 <button class="button-mirror">Comprar</button>
 
             </form>
+        </section>
+
+        <section class="details-mirror">
+            <h2>Detalhes do produto</h2>
+   
+            <p>Camiseta confortável ideal para eventos casuais!</p>
+            <p>Camiseta manga curta, gola redonda. Possui estampa de Caveira e descritivo
+                frontal e lisa nas costas.</p>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Detalhe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Modelo</td>
+                        <td>Camiseta Ecko Caveira</td>
+                    </tr>
+                    <tr>
+                        <td>Material</td>
+                        <td>Algodão e poliester</td>
+                    </tr>
+                    <tr>
+                        <td>Cores</td>
+                        <td>Verde, Rosa e Azul</td>
+                    </tr>
+                    <tr>
+                        <td>Lavagem</td>
+                        <td>Lavar a mão</td>
+                    </tr>
+                </tbody>
+            </table>
+            
         </section>
 
         <footer class="footer-mirror">
@@ -73,6 +119,8 @@
                 </ul>
             </div>
         </footer>
+        
+        <script type="text/javascript" src="js/produto.js"></script>
                 
     </body>
 </html>
